@@ -448,4 +448,18 @@ footer .btn:hover {
     .schedule .stage {
         display: none;
     }
+
+    .schedule .performance .performanceName {
+        font-size: 30px;
+    }
+
+    .scroll-downs {
+        display: none;
+    }
+}
+
+@media all and (max-width: 1200px) {
+    #shooting_star{
+        display: none;
+    }
 }

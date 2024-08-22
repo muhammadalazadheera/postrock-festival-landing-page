@@ -209,13 +209,13 @@
   <footer>
     <div>
       <a class="btn">Book Ticket</a>
-      <p>Al Azad Heera©2015<p>
+      <p>Al Azad Heera ©<span id="current_year"></span><p>
     </div>
   </footer>
 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
-    AOS.init();
+    AOS.init({disable: window.innerWidth < 500});
   </script>
   <script>
     const date = new Date();
@@ -226,6 +226,7 @@
     let year = date.getFullYear();
 
     document.getElementById("time").innerHTML = day +' '+ month +' '+ year;
+    document.getElementById("current_year").innerHTML = year;
   </script>
 </body>
 
