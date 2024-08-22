@@ -15,7 +15,7 @@
     <div class="intro">
       <p class="addrsss">Hope Valley Farm, England.</p>
       <p class="title">Postrock Festival</p>
-      <p class="time">25 August 2015</p>
+      <p class="time" id="time"></p>
       <div>
         <a class="btn">Book Ticket</a>
       </div>
@@ -216,6 +216,16 @@
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
+  </script>
+  <script>
+    const date = new Date();
+    date.setDate(date.getDate() + 15);
+
+    let day = date.getDate();
+    let month = date.toLocaleString('default', { month: 'long' });;
+    let year = date.getFullYear();
+
+    document.getElementById("time").innerHTML = day +' '+ month +' '+ year;
   </script>
 </body>
 
