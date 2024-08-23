@@ -429,7 +429,7 @@ footer .btn:hover {
     color: #85a0b1;
 }
 
-@media all and (max-width: 400px) {
+@media all and (max-width: 480px) {
     .schedule .performance:nth-of-type(2n) {
         text-align: left;
         padding-right: 0;
